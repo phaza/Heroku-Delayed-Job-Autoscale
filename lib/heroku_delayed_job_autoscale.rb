@@ -1,0 +1,3 @@
+module HerokuDelayedJobAutoscale
+  # Your code goes here...
+end
