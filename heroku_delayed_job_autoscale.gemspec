@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
   
   s.add_dependency 'heroku', '>= 1'
   s.add_dependency 'rush', '>= 0.6'
+  s.add_dependency 'delayed_job', '>= 2.1'
 end
