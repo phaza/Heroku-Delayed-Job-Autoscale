@@ -8,6 +8,14 @@ module HerokuDelayedJobAutoscale
     
     @@autoscale_manager = HerokuDelayedJobAutoscale::Manager::Local
     
+    def self.autoscale_manager
+      @@autoscale_manager
+    end
+    
+    def self.autoscale_manager=(manager)
+      @@autoscale_manager = manager
+    end
+    
     def enqueue(job)
       autoscale_enqueue(job)
     end
@@ -35,7 +43,7 @@ module HerokuDelayedJobAutoscale
 
     protected
     def autoscale_client
-      @autoscale_client ||= @@autoscale_manager.new
+      @autoscale_client ||= self.class.autoscale_manager.new
     end
 
   end
