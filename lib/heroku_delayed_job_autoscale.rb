@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'heroku_delayed_job_autoscale/managers/local'
 require 'heroku_delayed_job_autoscale/managers/heroku'
+require 'heroku_delayed_job_autoscale/managers/stub'
 
 module HerokuDelayedJobAutoscale
   module Autoscale
