@@ -1,3 +1,5 @@
+require 'heroku'
+
 module HerokuDelayedJobAutoscale
   module Manager
     class Heroku

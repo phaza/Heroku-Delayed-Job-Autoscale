@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'heroku_delayed_job_autoscale/managers/local'
 require 'heroku_delayed_job_autoscale/managers/heroku'
 

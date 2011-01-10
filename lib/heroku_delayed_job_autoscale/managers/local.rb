@@ -1,3 +1,5 @@
+require 'rush'
+
 module HerokuDelayedJobAutoscale
   module Manager
     class Local
