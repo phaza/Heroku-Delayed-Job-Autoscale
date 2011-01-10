@@ -41,7 +41,7 @@ module HerokuDelayedJobAutoscale
 
     protected
     def autoscale_client
-      @autoscale_client ||= self.class.autoscale_manager.new
+      @autoscale_client ||= @@autoscale_manager.new
     end
 
   end
