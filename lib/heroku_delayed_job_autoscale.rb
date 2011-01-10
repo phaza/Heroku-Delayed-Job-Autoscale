@@ -21,8 +21,6 @@ module HerokuDelayedJobAutoscale
     end
 
     def autoscale_enqueue(job)
-      Rails.logger.debug "enqueue"
-
       if autoscale_client.qty.zero?
         autoscale_client.scale_up
       end
